@@ -18,18 +18,28 @@
     .features h2 { text-align:center; margin-bottom:30px; }
     .feature-cards { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
     .feature-card { background-color:#fff; border:1px solid #ddd; border-radius:8px; padding:20px; flex:1 1 calc(33% - 40px); max-width:300px; }
+    section.example { padding:40px 20px; background-color:#fafafa; }
+    section.example h2 { text-align:center; margin-bottom:20px; }
+    .example-box { border:1px solid #ddd; border-radius:8px; padding:20px; margin-bottom:20px; }
+    .example-box h3 { margin-top:0; }
+    .example-box pre { background-color:#f7f7f7; padding:10px; border-radius:5px; overflow-x:auto; white-space:pre-wrap; }
+    section.guide { padding:40px 20px; background-color:#f5f5f5; }
+    section.guide h2 { text-align:center; margin-bottom:20px; }
+    section.guide ol { max-width:700px; margin:0 auto; }
+    section.guide li { margin-bottom:10px; }
+    section.language-select { padding:40px 20px; background-color:#fafafa; }
+    section.language-select h2 { text-align:center; margin-bottom:20px; }
+    section.language-select select { padding:10px; font-size:1rem; border-radius:4px; border:1px solid #ccc; margin:10px 0; }
+    section.language-select p { max-width:700px; margin:0 auto 20px; text-align:center; }
     section.tool { padding:40px 20px; }
+    section.tool h2 { text-align:center; margin-bottom:20px; }
+    section.tool p { text-align:center; margin-bottom:20px; }
     section.contact { padding:40px 20px; }
     section.contact h2 { text-align:center; margin-bottom:20px; }
     section.contact form { max-width:600px; margin:auto; display:flex; flex-direction:column; }
     section.contact input, section.contact textarea { padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px; }
     section.contact button { padding:10px; background-color:#0066cc; color:#fff; border:none; border-radius:5px; }
     footer { padding:20px; background-color:#f5f5f5; text-align:center; }
-    section.example { padding:40px 20px; background-color:#fafafa; }
-    section.example h2 { text-align:center; margin-bottom:20px; }
-    .example-box { border:1px solid #ddd; border-radius:8px; padding:20px; margin-bottom:20px; }
-    .example-box h3 { margin-top:0; }
-    .example-box pre { background-color:#f7f7f7; padding:10px; border-radius:5px; overflow-x:auto; white-space:pre-wrap; }
     @media (max-width:768px) { .feature-card { flex-basis: calc(50% - 40px); } }
     @media (max-width:480px) { .feature-card { flex-basis:100%; } }
   </style>
@@ -42,6 +52,8 @@
         <li><a href="#gioi-thieu">Giới thiệu</a></li>
         <li><a href="#tinh-nang">Tính năng</a></li>
         <li><a href="#vi-du">Ví dụ</a></li>
+        <li><a href="#huong-dan">Hướng dẫn</a></li>
+        <li><a href="#ngon-ngu">Ngôn ngữ</a></li>
         <li><a href="#cong-cu">Công cụ</a></li>
         <li><a href="#lien-he">Liên hệ</a></li>
       </ul>
@@ -95,10 +107,36 @@ Cấu trúc bài viết:
     </div>
   </section>
 
+  <section class="guide" id="huong-dan">
+    <h2>Hướng dẫn sử dụng Prompt Optimizer</h2>
+    <ol>
+      <li><strong>Chọn loại tối ưu</strong>: Chọn một trong ba công cụ – tối ưu prompt người dùng, tối ưu prompt hệ thống hoặc lặp lại &amp; cải tiến – tùy theo nhu cầu của bạn.</li>
+      <li><strong>Nhập prompt gốc</strong>: Gõ câu lệnh ban đầu mà bạn muốn cải thiện vào ô nhập.</li>
+      <li><strong>Chọn ngôn ngữ đầu ra</strong> (tuỳ chọn): Sử dụng mục “Ngôn ngữ” bên dưới để chọn ngôn ngữ mà bạn muốn nhận prompt tối ưu.</li>
+      <li><strong>Nhấn Optimize</strong>: Bấm nút "Optimize" để gửi yêu cầu tới hệ thống. Prompt Optimizer sẽ phân tích và tạo ra một prompt tối ưu mới.</li>
+      <li><strong>Xem và sử dụng prompt tối ưu</strong>: Kết quả hiển thị ở phần bên phải. Bạn có thể sao chép và sử dụng ngay cho mô hình AI của mình.</li>
+    </ol>
+  </section>
+
+  <section class="language-select" id="ngon-ngu">
+    <h2>Lựa chọn ngôn ngữ đầu ra</h2>
+    <p>Chọn ngôn ngữ mà bạn muốn prompt tối ưu hiển thị:</p>
+    <div style="text-align:center;">
+      <select name="lang">
+        <option>Tiếng Việt</option>
+        <option>Tiếng Anh</option>
+        <option>Tiếng Trung</option>
+      </select>
+    </div>
+    <p>Chức năng này giúp bạn định hướng ngôn ngữ cho prompt sau khi tối ưu (minh hoạ).</p>
+  </section>
+
   <section class="tool" id="cong-cu">
     <h2>Dùng thử công cụ</h2>
     <p>Nhấp vào nút dưới đây để mở Prompt Optimizer và trải nghiệm khả năng tối ưu hoá prompt ngay:</p>
-    <a class="btn" href="https://prompt-optimizer-j6cpg3n7n-taminhdung1986-1350s-projects.vercel.app" target="_blank">Mở Prompt Optimizer</a>
+    <div style="text-align:center;">
+      <a class="btn" href="https://prompt-optimizer-j6cpg3n7n-taminhdung1986-1350s-projects.vercel.app" target="_blank">Mở Prompt Optimizer</a>
+    </div>
   </section>
 
   <section class="contact" id="lien-he">
@@ -113,6 +151,7 @@ Cấu trúc bài viết:
 
   <footer>
     <p>&copy; 2025 Prompt Optimizer Landing Page. Thiết kế bởi [Tên của bạn].</p>
+    <p>Người tạo website: <a href="mailto:taminhdung1986@gmail.com">taminhdung1986@gmail.com</a></p>
   </footer>
 </body>
 </html>

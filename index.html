@@ -25,6 +25,11 @@
     section.contact input, section.contact textarea { padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:5px; }
     section.contact button { padding:10px; background-color:#0066cc; color:#fff; border:none; border-radius:5px; }
     footer { padding:20px; background-color:#f5f5f5; text-align:center; }
+    section.example { padding:40px 20px; background-color:#fafafa; }
+    section.example h2 { text-align:center; margin-bottom:20px; }
+    .example-box { border:1px solid #ddd; border-radius:8px; padding:20px; margin-bottom:20px; }
+    .example-box h3 { margin-top:0; }
+    .example-box pre { background-color:#f7f7f7; padding:10px; border-radius:5px; overflow-x:auto; white-space:pre-wrap; }
     @media (max-width:768px) { .feature-card { flex-basis: calc(50% - 40px); } }
     @media (max-width:480px) { .feature-card { flex-basis:100%; } }
   </style>
@@ -36,6 +41,7 @@
       <ul>
         <li><a href="#gioi-thieu">Giới thiệu</a></li>
         <li><a href="#tinh-nang">Tính năng</a></li>
+        <li><a href="#vi-du">Ví dụ</a></li>
         <li><a href="#cong-cu">Công cụ</a></li>
         <li><a href="#lien-he">Liên hệ</a></li>
       </ul>
@@ -44,7 +50,7 @@
 
   <section class="hero" id="gioi-thieu">
     <h1>Tối ưu hoá Prompt AI hiệu quả hơn</h1>
-    <p>Prompt Optimizer giúc bạn viết yêu cầu chi tiết và sắc bén để mô hình AI hiểu đúng ý đồ.</p>
+    <p>Prompt Optimizer giúp bạn viết yêu cầu chi tiết và sắc bén để mô hình AI hiểu đúng ý đồ, mang lại kết quả chất lượng cao.</p>
     <a class="btn" href="#cong-cu">Dùng thử ngay</a>
   </section>
 
@@ -53,22 +59,45 @@
     <div class="feature-cards">
       <div class="feature-card">
         <h3>Tối ưu prompt người dùng</h3>
-        <p>Tăng độ rõ ràng và chi tiết cho câu lệnh của bạn.</p>
+        <p>Phân tích yêu cầu của bạn để xác định mục tiêu cuối cùng, đối tượng hướng đến, định dạng mong muốn và các ràng buộc đi kèm. Kết quả là một câu lệnh rõ ràng, chi tiết để AI hiểu đúng ý đồ.</p>
       </div>
       <div class="feature-card">
         <h3>Tối ưu prompt hệ thống</h3>
-        <p>Điều chỉnh vai trò và ngữ cảnh hệ thống cho AI.</p>
+        <p>Tinh chỉnh các chỉ thị hệ thống để thiết lập vai trò cho AI (ví dụ như chuyên gia, người kể chuyện, v.v.) và đảm bảo tuân thủ xuyên suốt cuộc hội thoại, giúp mô hình phản hồi nhất quán.</p>
       </div>
       <div class="feature-card">
-        <h3>Lặp lại & cải tiến</h3>
-        <p>Tinh chỉnh câu lệnh qua nhiều vòng lặp để đạt hiệu quả cao.</p>
+        <h3>Lặp lại &amp; cải tiến</h3>
+        <p>Cho phép bạn cải tiến prompt theo từng bước nhỏ dựa trên phản hồi của AI, thay vì viết lại hoàn toàn, giúp dễ dàng đạt được kết quả tối ưu.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="example" id="vi-du">
+    <h2>Ví dụ tối ưu Prompt</h2>
+    <div class="example-box">
+      <h3>Bài viết về quản lý tài chính cá nhân</h3>
+      <p><strong>Prompt gốc:</strong></p>
+      <pre>Viết một bài đăng trên mạng xã hội về tầm quan trọng của quản lý tài chính cá nhân.</pre>
+      <p><strong>Prompt tối ưu:</strong></p>
+      <pre>Vào vai một chuyên gia tài chính cá nhân với 10 năm kinh nghiệm, viết một bài đăng Facebook để khơi dậy nhận thức cho những người trẻ từ 22–30 tuổi. Sử dụng giọng văn gần gũi, truyền cảm hứng nhưng không giáo điều.
+
+Cấu trúc bài viết:
+- Câu mở đầu: Bắt đầu bằng một sự thật thống kê đáng ngạc nhiên về thói quen chi tiêu của giới trẻ.
+- Thân bài: Trình bày 3 lý do cốt yếu vì sao phải quản lý tài chính ngay từ bây giờ, mỗi lý do kèm theo một ví dụ thực tế dễ hiểu.
+- Kết luận: Kết thúc bằng một lời kêu gọi hành động đơn giản, chẳng hạn như thách thức người đọc ghi lại chi tiêu trong 1 tuần.</pre>
+    </div>
+    <div class="example-box">
+      <h3>Truyện ngắn khoa học viễn tưởng</h3>
+      <p><strong>Prompt gốc:</strong></p>
+      <pre>Viết một câu chuyện khoa học viễn tưởng ngắn.</pre>
+      <p><strong>Prompt tối ưu:</strong></p>
+      <pre>Hãy viết một truyện ngắn khoa học viễn tưởng khoảng 800 từ, mang phong cách lạc quan, hướng tới đối tượng thanh thiếu niên. Bối cảnh ở một thành phố công nghệ vào năm 2100, nhân vật chính là một nữ kỹ sư chế tạo robot có cá tính mạnh mẽ. Câu chuyện cần có bước ngoặt bất ngờ và kết thúc mở, khuyến khích người đọc suy ngẫm.</pre>
     </div>
   </section>
 
   <section class="tool" id="cong-cu">
     <h2>Dùng thử công cụ</h2>
-    <p>Nhấp vào nút dưới đây để mở công cụ Prompt Optimizer:</p>
+    <p>Nhấp vào nút dưới đây để mở Prompt Optimizer và trải nghiệm khả năng tối ưu hoá prompt ngay:</p>
     <a class="btn" href="https://prompt-optimizer-j6cpg3n7n-taminhdung1986-1350s-projects.vercel.app" target="_blank">Mở Prompt Optimizer</a>
   </section>
 
